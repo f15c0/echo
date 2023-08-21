@@ -1,0 +1,21 @@
+/* Footer.module.css */
+
+.footerContainer {
+    background-color: var(--offBlack);
+    color: white;
+    padding: 20px 10px;
+    text-align: right;
+    border-top: 1px solid #444;
+}
+
+.footerText {
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    font-size: 18px;
+    font-weight: var(--fw-semiBold);
+}
+
+sup{
+    padding: 0px 5px;
+}

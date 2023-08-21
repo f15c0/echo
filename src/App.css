@@ -1,0 +1,89 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  flex: 1;
+  background-image: url("./assets/Background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-panel {
+  background-color: white;
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  overflow: auto;
+}
+
+.login-form{
+  text-align: center;
+  padding: 20px 0px;
+}
+.login-panel h1{
+  font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    color: var(--offBlack);
+}
+
+.login-content{
+  padding-top: 68px;
+  margin-top: 40px 0px;
+  
+}
+
+.input {
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    align-items: center;
+    margin-top: 50px;
+ 
+}
+
+.input input {
+  padding: 18px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 24px;
+  width: 80%;
+  max-width: 300px;
+}
+
+
+.input p {
+  align-self: flex-start;
+  margin-left: 18%;
+  font-size: 24px;
+  font-weight: bold ;
+  
+}
+.submit-btn {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  padding: 20px 20px;
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 32px;
+  font-size: 24px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #2980b9;
+  }
+}
