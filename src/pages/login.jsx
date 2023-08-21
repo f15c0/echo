@@ -5,7 +5,7 @@ const Login = () => {
       <form className="login-form">
         <div className="login-content">
           <div>
-            <img src={Appicon} alt="App icon" />
+            <img src={Appicon} width={120} alt="App icon" />
           </div>
           <h1 className="login-title">Echo</h1>
 
