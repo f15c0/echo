@@ -5,13 +5,13 @@ const Login = () => {
       <form className="login-form">
         <div className="login-content">
           <div>
-            <img src={Appicon} width={120} alt="App icon" />
+            <img src={Appicon} width={81} height={70} alt="App icon" />
           </div>
           <h1 className="login-title">Echo</h1>
 
-          <div className="input">
+          <div className="form-group">
             <p>Login</p>
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email" className="email" />
             <input type="password" placeholder="Password" />
             <button type="submit" className="submit-btn">
               Login
