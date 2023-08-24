@@ -14,6 +14,10 @@
   justify-content: center;
   align-items: center;
 }
+.contentShare {
+  flex: 1;
+}
+
 
 .login-panel {
   background-color: white;
@@ -88,4 +92,117 @@
   &:hover {
     background-color: #cc57c0;
   }
+}
+
+
+header nav{
+  height: 75px;
+  padding: 0px 50px;
+  background-color: #F2F3F4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25); */
+
+}
+
+.echo-text{
+  color: var(--offBlack);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+}
+
+.tabs{
+  display: flex;
+  justify-content: space-around;
+  align-self: self-end;
+}
+
+.tabs li{
+  color: var(--offBlack);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 20px;
+  list-style: none;
+  cursor: pointer;
+  
+}
+
+.tabs li.active {
+  padding-bottom: 24px;
+  border-bottom: 3px solid #cc57c0;
+}
+
+.divider {
+  border-left: 1px solid #000;
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.profile-section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  line-height: 75px !important;
+  border-left: 1px solid #D9DCDE;
+  padding-left: 15px;
+}
+
+.avatar-box img {
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+}
+
+.logout-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.logout-box p{
+  font-weight: 700;
+  font-size: 12px;
+  color: #59636E;
+  cursor: pointer;
+}
+
+.logout-box p:hover{
+  color: #cc57c0;
+  transition: ease-in-out;
+  transition-duration: 150;
+}
+.profile-name{
+  margin-bottom: 0.2em;
+  color: var(--offBlack);
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.notification-badge {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-badge::after {
+  content: attr(data-count);
+  position: absolute;
+  top: -20px;
+  right: -16px;
+  background: var(--primaryColor);
+  color: white;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14.98px;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  /* border: 1px solid white; */
 }
